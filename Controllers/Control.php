@@ -11,6 +11,6 @@ class Control
     public static function home()
     {
         // var_dump($_SESSION['user']); // ici l'objet est perdu -> object(__PHP_Incomplete_Class) (3)
-        require 'Views/Replace.php';
+        require 'Views/dashboard.php';
     }
 }
