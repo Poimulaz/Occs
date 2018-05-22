@@ -34,13 +34,39 @@
     margin-top: 20px;
 }
 
+.rowCustom{
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.badgeAlertes{
+    background-color: #e8534f !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: white!important;
+}
+
+.badgeWarnings{
+    background-color: #ffc107 !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: white!important;
+}
+
+
 .badgeStatusUp{
     background-color: #009688 !important;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     color: white!important;
 }
 

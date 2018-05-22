@@ -1,5 +1,6 @@
 new Chart(document.getElementById("bar-chart"),{
     type: 'doughnut',
+    responsive: true,
     data: {
         labels: ["Espace utilisé", "Espace libre"],
         datasets: [{
@@ -15,3 +16,5 @@ new Chart(document.getElementById("bar-chart"),{
         }
     }
 });
+
+Chart.defaults.global.responsive = true;
