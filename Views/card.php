@@ -12,8 +12,7 @@
                 <div class="valign-wrapper row rowStatus">
                     <div class="col s6">
                         <div class="center">
-                            <?php  
-                            $ip = false;
+                            <?php
 
                             if($ip == false){
                                 echo '<i  class="medium material-icons iconStatusDown">pause_circle_outline</i>';
