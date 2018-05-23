@@ -61,6 +61,19 @@ class Control
             echo "$line\n";
         }
 
+        exec('uptime', $retval);
+
+
+        echo '
+<hr />Valeur retournée : ';
+        foreach ($retval as $line) {
+            echo "$line";
+            echo "<br>";
+        }
+
+        $load = explode(":",$retval[3]);
+        echo "LoadAverage" . $load;
+        echo "<br>";
 
         require 'Views/dashboard.php';
     }
