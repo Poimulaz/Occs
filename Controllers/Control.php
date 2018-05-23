@@ -19,6 +19,9 @@ class Control
 
         $last_line = system('/etc/init.d/apache2 status', $retval);
 
+        $retval = explode("Active: ", $retval)[1];
+        $retval = substr($retval, 0,6);
+        echo '<div>retval =' . $retval . '</div>';
         /*if($retval){
             $ip = false;
         }
