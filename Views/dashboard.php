@@ -37,9 +37,9 @@
             data: {
                 labels: ["Espace utilisé", "Espace libre"],
                 datasets: [{
-                    label: 'Memoire (' . <?php echo $total ?> .  ')',
+                    label: 'Memoire (' . <?php $total ?> .  ')',
                     backgroundColor: ["#3e95cd"],
-                    data: [<?php echo $occupe ?>, <?php echo $libre ?> ]
+                    data: [<?php $occupe ?>, <?php $libre ?> ]
                 }]
             },
             options: {
