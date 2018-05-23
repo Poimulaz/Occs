@@ -37,7 +37,7 @@
                 <div class="col m6 s6 l6 center-align">
                     <span class="badgeUsers">
                         <strong>
-                            <?php echo $nbUsers[1]  ?>
+                            2 users
                         </strong>
                     </span>
                 </div>

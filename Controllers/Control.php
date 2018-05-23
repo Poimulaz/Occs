@@ -73,9 +73,7 @@ class Control
 
         exec('w', $listUser);
 
-        foreach($listUser as $line){
-            echo $line;
-        }
+
         
         $arrayUser = array();
 
