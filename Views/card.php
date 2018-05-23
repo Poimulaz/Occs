@@ -13,12 +13,12 @@
                 </div>
                 <div class="col m4 s4 l4 center-align">
                     <span class=badgeStatusUp>
-                        <strong><?php echo $nb1[2] ?></strong>
+                        <strong><?php echo $nb1[3] ?></strong>
                     </span>
                 </div>
                 <div class="col m4 s4 l4 center-align">
                     <span class=badgeStatusUp>
-                        <strong><?php echo $nb1[3] ?></strong>
+                        <strong><?php echo $nb1[5] ?></strong>
                     </span>
                 </div>
             </div>
