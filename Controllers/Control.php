@@ -77,7 +77,7 @@ class Control
 
         for($i = 2; $i < count($listUser) ; $i++){
             $name = explode(' ', $listUser[$i]);
-            echo $name[0];
+ 
             $arrayUser[$i - 2]= $name[0];
 
         }
