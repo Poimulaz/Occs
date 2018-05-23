@@ -26,15 +26,21 @@ class Control
         echo "<br>";
 
         $espace = explode(" ",$mem[1]);
-
+        $compteur = 0;
         foreach ($espace as $line) {
+            if($espace != " "){
+                $mems[$compteur] = $espace;
+                $compteur ++;
+            }
+        }
+
+        foreach ($mems as $line) {
             echo "$line";
             echo "<br>";
         }
-
-        $total = $espace [0];
-        $occupe = $espace [1];
-        $libre = $espace [2];
+        $total = $mems[0];
+        $occupe = $mems[1];
+        $libre = $mems[2];
 
         echo "total = " . $total;
         echo "<br>";
