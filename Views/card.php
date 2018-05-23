@@ -60,16 +60,16 @@
     <div class="col s12 m3 l3">
         <div class="card-panel">
             <div>
-                <span>Ram</span>
+                <span>User</span>
             </div>
 
             <div class="row valign-wrapper rowCustom">
                 <div class="col m6 s6 l6 center-align">
-                    <i class="small material-icons iconStatusUp">play_circle_outline</i>
+                    <i class="small material-icons iconUser">group</i>
                 </div>
                 <div class="col m6 s6 l6 center-align">
-                    <span class=badgeStatusUp>
-                        <strong>UP</strong>
+                    <span class="badgeUsers">
+                        <strong><?php echo $nbUsers[1]  ?></strong>
                     </span>
                 </div>
             </div>
