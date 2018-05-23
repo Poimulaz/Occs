@@ -36,7 +36,6 @@ class Control
 
         foreach ($mems as $line) {
             echo "$line";
-            echo "<br>";
         }
         $total = $mems[0];
         $occupe = $mems[1];
