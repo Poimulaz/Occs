@@ -22,7 +22,7 @@ class Control
 <hr />La dernière ligne en sortie de la commande : ' . $last_line . '
 <hr />Valeur retournée : ' . $retval;
 
-        $last_line = system('ping 8.8.8.8', $retval);
+       // $last_line = system('ping 8.8.8.8', $retval);
 
         if($retval){
             $ip = false;

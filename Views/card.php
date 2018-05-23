@@ -76,3 +76,10 @@
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col m5 s12 xs12 l5">
+        <div class="card-panel">
+            <canvas id="bar-chart"></canvas>
+        </div>
+    </div>
+</div>
