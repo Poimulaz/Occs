@@ -15,14 +15,14 @@ class Control
 
 
         echo '
-<hr />La dernière ligne en sortie de la commande : ' . $last_line . '
 <hr />Valeur retournée : ';
         foreach ($retval as $line) {
-            echo "$line\n";
+            echo "$line";
+            echo "<br>";
         }
 
-        $mem = explode(" ",$retval[0]);
-        echo $mem[2];
+        $mem = explode(":",$retval[0]);
+        echo $mem[1];
         exec('/etc/init.d/apache2 status | grep active', $retval1);
 /*
         $retval = explode("Active: ", $retval)[1];
@@ -44,7 +44,6 @@ class Control
         }
         else $ip =true;*/
         echo '
-<hr />La dernière ligne en sortie de la commande : ' . $last_line . '
 <hr />Valeur retournée : ';
 
         foreach ($retval1 as $line) {
