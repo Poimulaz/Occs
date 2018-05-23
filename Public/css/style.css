@@ -26,6 +26,10 @@
     color: #009688 !important;
 }
 
+.iconUser{
+    color: #a5d3ee !important;
+}
+
 .iconStatusDown{
     color: #e8534f;
 }
@@ -48,6 +52,18 @@
     padding-top: 3px;
     color: white!important;
 }
+
+
+.badgeUsers{
+    background-color: #a5d3ee !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: white!important;
+}
+
 
 .badgeWarnings{
     background-color: #ffc107 !important;
