@@ -54,18 +54,21 @@ class Control
 
         exec('uptime /top', $cpu);
 
+
+
         $nbExec = explode(':', $cpu[0]);
 
         // NB1
-        $nb1 = explode(' ', $nbExec[3]);
+        $nb1= explode(',', $nbExec[4]);
+
    
 
         // NB2
-        $nb1 = explode(' ', $nbExec[3]);
+        $nb1 = explode(',', $nbExec[4]);
  
 
         // NB3
-        $nb1 = explode(' ', $nbExec[3]);
+        $nb1 = explode(',', $nbExec[4]);
 
 
         exec('w', $listUser);
