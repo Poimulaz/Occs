@@ -8,17 +8,17 @@
             <div class="row valign-wrapper rowCustom">
                 <div class="col m4 s4 l4 center-align">
                     <span class=badgeStatusUp>
+                        <strong><?php echo $nb1[0] ?></strong>
+                    </span>
+                </div>
+                <div class="col m4 s4 l4 center-align">
+                    <span class=badgeStatusUp>
                         <strong><?php echo $nb1[1] ?></strong>
                     </span>
                 </div>
                 <div class="col m4 s4 l4 center-align">
                     <span class=badgeStatusUp>
-                        <strong><?php echo $nb1[3] ?></strong>
-                    </span>
-                </div>
-                <div class="col m4 s4 l4 center-align">
-                    <span class=badgeStatusUp>
-                        <strong><?php echo $nb1[5] ?></strong>
+                        <strong><?php echo $nb1[2] ?></strong>
                     </span>
                 </div>
             </div>
