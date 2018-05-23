@@ -25,9 +25,16 @@ class Control
         echo "memoire : " . $mem[1];
         echo "<br>";
 
-        $total = explode(" ",$mem[1])[0];
-        $occupe = explode(" ",$mem[1])[1];
-        $libre = explode(" ",$mem[1])[2];
+        $espace = explode(" ",$mem[1]);
+
+        foreach ($espace as $line) {
+            echo "$line";
+            echo "<br>";
+        }
+
+        $total = $espace [0];
+        $occupe = $espace [1];
+        $libre = $espace [2];
 
         echo "total = " . $total;
         echo "<br>";
