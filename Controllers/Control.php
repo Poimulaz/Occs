@@ -11,7 +11,8 @@ class Control
     public static function home()
     {
 
-        $last_line = exec('free -m', $retval);
+        exec('free -m', $retval);
+
 
         echo '
 <hr />La dernière ligne en sortie de la commande : ' . $last_line . '
@@ -20,12 +21,23 @@ class Control
             echo "$line\n";
         }
 
-        $last_line = exec('/etc/init.d/apache2 status | grep active', $retval);
+        $mem = explode(" ",$retval[0]);
+        echo $mem[2];
+        exec('/etc/init.d/apache2 status | grep active', $retval1);
 /*
         $retval = explode("Active: ", $retval)[1];
-        $retval = substr($retval, 0,6);*/
-        foreach ($retval as $line) {
-            echo "$line\n";
+        $retval = substr($retval, 0,6);
+        foreach ($retval1 as $line) {
+            echo "$line";
+            echo "<br>";
+        }
+        $retval = $retval[1];
+        explode("Active: ", $retval);
+        $retval = substr($retval[1], 0,6);
+*/
+        foreach ($retval1 as $line) {
+            echo "$line";
+            echo "<br>";
         }
         /*if($retval){
             $ip = false;
@@ -35,7 +47,7 @@ class Control
 <hr />La dernière ligne en sortie de la commande : ' . $last_line . '
 <hr />Valeur retournée : ';
 
-        foreach ($retval as $line) {
+        foreach ($retval1 as $line) {
             echo "$line\n";
         }
 
