@@ -4,9 +4,9 @@ new Chart(document.getElementById("bar-chart"),{
     data: {
         labels: ["Espace utilisé", "Espace libre"],
         datasets: [{
-            label: "Population (millions)",
+            label: "Memoire ()",
             backgroundColor: ["#3e95cd"],
-            data: [$total , $occupe, $libre  ]
+            data: [$occupe, $libre  ]
         }]
     },
     options: {
