@@ -21,8 +21,9 @@ class Control
             echo "<br>";
         }
 
-        $mem = explode(":",$retval[0]);
+        $mem = explode(":",$retval[1]);
         echo "memoire : " . $mem[1];
+        echo "<br>";
         exec('/etc/init.d/apache2 status | grep active', $retval1);
 /*
         $retval = explode("Active: ", $retval)[1];
