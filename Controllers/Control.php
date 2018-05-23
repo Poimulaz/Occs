@@ -13,18 +13,7 @@ class Control
 
         exec('free -m', $retval);
 
-
-        echo '
-<hr />Valeur retournée : ';
-        foreach ($retval as $line) {
-            echo "$line";
-            echo "<br>";
-        }
-
         $mem = explode(":",$retval[1]);
-        echo "memoire : " . $mem[1];
-        echo "<br>";
-
         $espace = explode(" ",$mem[1]);
         $compteur = 0;
         foreach ($espace as $line) {
@@ -32,11 +21,6 @@ class Control
                 $mems[$compteur] = $line;
                 $compteur ++;
             }
-        }
-
-        foreach ($mems as $line) {
-            echo "$line";
-            echo "<br>";
         }
         $total = $mems[0];
         $occupe = $mems[1];

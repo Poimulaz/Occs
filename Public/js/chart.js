@@ -6,7 +6,7 @@ new Chart(document.getElementById("bar-chart"),{
         datasets: [{
             label: "Population (millions)",
             backgroundColor: ["#3e95cd"],
-            data: [154 , 310  ]
+            data: [$total , $occupe, $libre  ]
         }]
     },
     options: {
