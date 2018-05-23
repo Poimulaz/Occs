@@ -74,6 +74,51 @@ class Control
         $load = explode(":",$retval[3]);
         echo "LoadAverage" . $load;
         echo "<br>";
+        exec('w', $retval);
+
+        
+        foreach ($retval as $line) {
+        
+            echo "$line";
+            echo "<br />";
+        }
+
+        // Récupéation du nombre de users
+        $nbUsers = explode(',',$retval[0]);
+        $nbUsers[1];
+
+        $nb = explode(' ', $nbUsers[1]);
+        echo $nb;
+    
+        echo "<br />";
+
+
+        $nameUser = explode(' ',$retval[2]);
+        echo $nameUser[0];
+
+
+
+        //CPU
+
+        exec('uptime /top', $cpu);
+
+        $nbExec = explode(':', $cpu[0]);
+        echo $nbExec[3];
+        echo "<br/>";
+
+        // NB1
+        $nb1 = explode(' ', $nbExec[3]);
+        echo $nb1[1];
+        echo "<br/>";
+
+        // NB2
+        $nb1 = explode(' ', $nbExec[3]);
+        echo $nb1[2];
+        echo "<br/>";
+
+        // NB3
+        $nb1 = explode(' ', $nbExec[3]);
+        echo $nb1[3];
 
         require 'Views/dashboard.php';
     }
