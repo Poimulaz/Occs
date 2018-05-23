@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col s12 m3 l3">
-        <div class="card-panel" style="height:  120px;">
+        <div class="card-panel" style="height:125px;">
             <div>
                 <span>CPU Load average</span>
             </div>
@@ -94,6 +94,24 @@
 
     <div class="col m5 s12 xs12 l5">
         <div class="card-panel">
+        
+        <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <?php
+            foreach($arrayUser as $user){
+                echo "<tr>";
+                echo "<td>$user</td>";
+                echo "</tr>";
+            }
+        ?>
+        </tbody>
+      </table>
 
         </div>
     </div>
