@@ -28,8 +28,8 @@ class Control
         $espace = explode(" ",$mem[1]);
         $compteur = 0;
         foreach ($espace as $line) {
-            if($espace != " "){
-                $mems[$compteur] = $espace;
+            if($line != " "){
+                $mems[$compteur] = $line;
                 $compteur ++;
             }
         }
